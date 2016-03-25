@@ -25,14 +25,14 @@
 
 Abstract
 
-React has ushered in a fundamental change in how web applications
-are built that has effected the front end community by views that react to data
-changes in a functional way. But one the one thing that react really lacks is
-data management and data fetching
+ReactJS has ushered in a fundamental change to web application development:
+Utilizing views that react to data changes in a functional manner. This change
+has led the front-end community to embrace React with increasing optimism. But
+there is still one thing that React is not very good at: asynchronous data fetching.
 
-Reactive Extensions for JavaScript (RxJs) solves the hardest problem with
-JavaScript, asynchronicity and composition of events and data. It does this by combining
-functional programming concepts (monads) and event emitters.
+Reactive Extensions for JavaScript (RxJS) solves the hardest problem with
+JavaScript, asynchronicity. It does this by combining functional programming
+concepts and event based data streams.
 
-Can you combine these two and make something great? Hear about how you can take
-your React applications to the next level with a few key Rx concepts.
+Combine synchronous and asynchronous code flawlessly using Rx and take your
+real world React app to the next level.
