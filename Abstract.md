@@ -34,5 +34,5 @@ Reactive Extensions for JavaScript (RxJS) solves the hardest problem with
 JavaScript, asynchronicity. It does this by combining functional programming
 concepts and event based data streams.
 
-Combine synchronous and asynchronous code flawlessly using Rx and take your
+Learn how to combine synchronous and asynchronous code flawlessly using Rx and take your
 real world React app to the next level.
