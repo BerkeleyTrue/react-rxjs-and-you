@@ -6,6 +6,8 @@ import {
   Deck,
   Heading,
   Link,
+  List,
+  ListItem,
   Slide,
   Spectacle,
   Text
@@ -57,14 +59,88 @@ export default class Presentation extends React.Component {
               size={ 1 }>
               Observables for a better tomorrow
             </Heading>
-            <Link href='https://github.com/FormidableLabs/spectacle'>
+          </Slide>
+          <Slide>
+            <Link href='https://github.com/berkeleytrue/react-rxjs-and-you'>
               <Text
                 bold={ true }
                 caps={ true }
                 textColor='tertiary'>
-                View on Github
+                View on Github(BerkeleyTrue/react-rxjs-and-you)
               </Text>
             </Link>
+          </Slide>
+          <Slide>
+            <Heading>
+              Whose that guy?
+            </Heading>
+            <List
+              bold={ true }
+              caps={ true }
+              textColor='white'>
+              <ListItem>
+                CTO of Free Code Camp
+              </ListItem>
+              <ListItem>
+                @BerkeleyTrue on the internet
+              </ListItem>
+              <ListItem>
+                Programming for over two years
+              </ListItem>
+              <ListItem>
+                React/RxJS Advocate
+              </ListItem>
+              <ListItem>
+                #AnyoneCanLearnToCode
+              </ListItem>
+            </List>
+          </Slide>
+          <Slide
+            background='black'>
+            <List
+              bold={ true }
+              caps={ true }
+              textColor='white'>
+              <ListItem>
+                What This is
+              </ListItem>
+              <ListItem>
+                What this isn't
+              </ListItem>
+              <ListItem>
+                What is RxJS?
+              </ListItem>
+              <ListItem>
+                What are Observables?
+              </ListItem>
+              <ListItem>
+                Why are they awesome?
+              </ListItem>
+              <ListItem>
+                Observables in React
+              </ListItem>
+              <ListItem>
+                Observables in Redux
+              </ListItem>
+              <ListItem>
+                Redux Epic
+              </ListItem>
+            </List>
+          </Slide>
+          <Slide bgColor='secondary'>
+            <Heading>
+              What this isn't?
+            </Heading>
+          </Slide>
+          <Slide bgColor='secondary'>
+            <Heading>
+              What this is?
+            </Heading>
+          </Slide>
+          <Slide bgColor='secondary'>
+            <Heading>
+              What is RxJS?
+            </Heading>
           </Slide>
           <Slide
             bgColor='primary'
@@ -77,10 +153,10 @@ export default class Presentation extends React.Component {
               textColor='black'>
               What are Observables?
             </Heading>
-            <Heading
-              caps={ true }
-              size={ 1 }>
-              bar
+          </Slide>
+          <Slide bgColor='secondary'>
+            <Heading>
+              Why are they awesome?
             </Heading>
           </Slide>
         </Deck>
