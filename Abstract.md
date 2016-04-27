@@ -1,6 +1,6 @@
-# Make React Reactive (working title)
+# React, RxJS, and You
 
-### Brain storm
+## Brain storm
 
 * The hardest part of JavaScript is asynchronicity.
     * Ajax
@@ -23,7 +23,7 @@
 * Use Rx in place of flux?
 * Building Redux pattern using Rx? (using `scan`)
 
-Abstract
+## (OLD)Abstract
 
 ReactJS has ushered in a fundamental change to web application development:
 Utilizing views that react to data changes in a functional manner. This change
@@ -36,3 +36,6 @@ concepts and event based data streams.
 
 Learn how to combine synchronous and asynchronous code flawlessly using Rx and take your
 real world React app to the next level.
+
+
+## Abstract
