@@ -1,0 +1,14 @@
+const serviceOptions = {
+  api: '/services'
+};
+
+const sagaOptions = {
+  document: window.document,
+  services: servicesCreator(null, serviceOptions)
+};
+const sagaMiddleware = createEpic(sagaOptions, fetchChallengeSaga, titleSaga);
+const enhancers = [
+  applyMiddleware(...middlewares, sagaMiddleware),
+];
+const reducer = createReducer(sideReducers);
+const store = compose(...enhancers)(createStore)(reducer, initialState);
