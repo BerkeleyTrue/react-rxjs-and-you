@@ -14,6 +14,8 @@ import {
   Text
 } from 'spectacle';
 
+import CodeSlide from 'spectacle-code-slide';
+
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
 
@@ -21,6 +23,7 @@ import createTheme from 'spectacle/lib/themes/default';
 require('normalize.css');
 require('spectacle/lib/themes/default/index.css');
 
+import WikiSearch from './Wiki-Search.jsx';
 const theme = createTheme({
   primary: '#ffffff'
 });
@@ -289,35 +292,22 @@ hours and refreshes itself on the next request?
               </ListItem>
             </List>
           </Slide>
-          <Slide
-            bgColor='primary'
-            transition={['zoom', 'fade']}>
-            <CodePane
-              lang='jsx'
-              margin='20px auto'
-              source={ require('raw!../assets/deck.example') }
-            />
+          <Slide>
+            <WikiSearch />
           </Slide>
-          <Slide
+          <CodeSlide
             bgColor='primary'
-            transition={['zoom', 'fade']}>
-            <CodePane
-              lang='jsx'
-              margin='20px auto'
-              source={require('raw!../assets/deck2.example')}
-              textSize={ 30 }
-            />
-          </Slide>
-          <Slide
-            bgColor='primary'
-            transition={['zoom', 'fade']}>
-            <CodePane
-              lang='jsx'
-              margin='20px auto'
-              source={require('raw!../assets/deck3.example')}
-              textSize={ 30 }
-            />
-          </Slide>
+            code={ require('raw!../assets/deck.example') }
+            lang='jsx'
+            ranges={[
+              { loc: [0, 1] },
+              { loc: [21, 41] },
+              { loc: [2, 5] },
+              { loc: [8, 19] }
+            ]}
+            textSize={ 25 }
+            transition={['zoom', 'fade']}
+          />
           <Slide
             bgColor='secondary'
             notes={`
