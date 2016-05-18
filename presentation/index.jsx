@@ -3,7 +3,6 @@ import React from 'react';
 
 // Import Spectacle Core tags
 import {
-  CodePane,
   Deck,
   Heading,
   Link,
@@ -411,14 +410,17 @@ Responding to user mouse clicks
               </ListItem>
             </List>
           </Slide>
-          <Slide>
-            <CodePane
-              lang='jsx'
-              margin='20px auto'
-              source={require('raw!../assets/saga.example')}
-              textSize={ 30 }
-            />
-          </Slide>
+          <CodeSlide
+            code={ require('raw!../assets/saga.example') }
+            lang='jsx'
+            ranges={[
+              { loc: [ 0, 1 ] },
+              { loc: [ 2, 6] },
+              { loc: [ 7, 10 ] }
+            ]}
+            textSize={ 25 }
+            transition={[ 'zoom', 'fade' ]}
+          />
           <Slide>
             <Heading
               textColor='secondary'>
@@ -449,30 +451,62 @@ Responding to user mouse clicks
               </ListItem>
             </List>
           </Slide>
-          <Slide>
-            <CodePane
-              lang='jsx'
-              margin='20px auto'
-              source={require('raw!../assets/saga2.example')}
-              textSize={ 25 }
-            />
-          </Slide>
-          <Slide>
-            <CodePane
-              lang='jsx'
-              margin='20px auto'
-              source={require('raw!../assets/saga-with-deps.example')}
-              textSize={ 25 }
-            />
-          </Slide>
-          <Slide>
-            <CodePane
-              lang='jsx'
-              margin='20px auto'
-              source={require('raw!../assets/create-epic.example')}
-              textSize={ 25 }
-            />
-          </Slide>
+          <CodeSlide
+            code={ require('raw!../assets/saga2.example') }
+            lang='jsx'
+            ranges={[
+              { loc: [ 0, 1 ] },
+              { loc: [ 1, 2 ] },
+              { loc: [ 2, 3 ] },
+              { loc: [ 3, 10 ] },
+              { loc: [ 4, 5 ] },
+              { loc: [ 5, 8 ] },
+              { loc: [ 8, 9 ] }
+            ]}
+            textSize={ 20 }
+            transition={[]}
+          />
+          <CodeSlide
+            code={ require('raw!../assets/saga-autocomplete.example') }
+            lang='jsx'
+            ranges={[
+              { loc: [ 0, 1 ] },
+              { loc: [ 2, 10 ] },
+              { loc: [ 11, 26 ] },
+              { loc: [ 13, 25 ] },
+              { loc: [ 21, 25 ] }
+            ]}
+            textSize={ 20 }
+            transition={[]}
+          />
+          <CodeSlide
+            code={ require('raw!../assets/saga-with-deps.example') }
+            lang='jsx'
+            ranges={[
+              { loc: [ 0, 10 ] },
+              { loc: [ 2, 3 ] },
+              { loc: [ 3, 9 ] },
+              { loc: [ 4, 5 ] },
+              { loc: [ 5, 6 ] },
+              { loc: [ 6, 7 ] }
+            ]}
+            textSize={ 20 }
+            transition={[]}
+          />
+          <CodeSlide
+            code={require('raw!../assets/create-epic.example')}
+            lang='jsx'
+            ranges={[
+              { loc: [ 0, 1 ] },
+              { loc: [ 6, 10 ] },
+              { loc: [ 10, 11 ] },
+              { loc: [ 11, 14 ] },
+              { loc: [ 14, 16 ] },
+              { loc: [ 17, 24 ] }
+            ]}
+            textSize={ 20 }
+            transition={[]}
+          />
           <Slide
             notes={`
 create composed store enhancer
@@ -484,8 +518,9 @@ to create store
               href='https://github.com/berkeleytrue/react-rxjs-and-you'
               target='_blank'>
               <Heading
-                textColor='secondary'>
-                github.com/berkeleyTrye/redux-epic
+                textColor='secondary'
+                textSize={ 60 }>
+                github.com/berkeleyTrue/redux-epic
               </Heading>
             </Link>
           </Slide>

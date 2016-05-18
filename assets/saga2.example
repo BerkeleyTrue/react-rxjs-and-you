@@ -6,6 +6,6 @@ export default function fetchChallengesSaga(action$, getState, { services }) {
         .map(({ entities, result } = {}) => {
           return fetchChallengesCompleted(entities, result);
         })
-        .catch(error => Observable.just({ type: handleError, error }));
+        .catch(error => Observable.just({ type: 'handle-error', error }));
     });
 }

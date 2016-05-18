@@ -1,7 +1,6 @@
 import { Subject, DOM } from 'rx-dom';
 import React, { Component } from 'react';
 
-
 function searchWikipedia(term) {
   const cleanTerm = global.encodeURIComponent(term);
   const url = 'http://en.wikipedia.org/w/api.php?' +
@@ -45,7 +44,7 @@ export default class extends Component {
     const results = this.state && this.state.results || [];
     return (
       <div>
-        <div>Start Typing</div>
+        <div>Async Autocomplete</div>
         <input
           id='searchtext'
           onKeyUp={ e => this.keyUp$.onNext(e) }
