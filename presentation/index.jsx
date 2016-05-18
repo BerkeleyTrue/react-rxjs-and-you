@@ -301,7 +301,7 @@ hours and refreshes itself on the next request?
             ranges={[
               { loc: [0, 1] },
               { loc: [21, 41] },
-              { loc: [2, 5] },
+              { loc: [2, 7] },
               { loc: [8, 19] }
             ]}
             textSize={ 25 }
